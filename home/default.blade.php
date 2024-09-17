@@ -14,7 +14,14 @@
     </div>
 
     <div class="container" id="home-default">
+
         <div class="flex-container-column items-center justify-center hide-under-l">
+            @if(setting('app-logo', '') !== 'none')
+                <img class="logo-image" src="{{ setting('app-logo', '') === '' ? url('/logo.png') : url(setting('app-logo', '')) }}" alt="Logo">
+            @endif
+            @if (setting('app-name-header'))
+                <span class="logo-text">{{ setting('app-name') }}</span>
+            @endif
             @if(user()->hasAppAccess())
                 @include('layouts.parts.header-search')
             @endif
