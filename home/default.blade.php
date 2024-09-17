@@ -14,17 +14,13 @@
     </div>
 
     <div class="container" id="home-default">
-
-        <div class="flex-container-column items-center justify-center hide-over-m">
+        <div class="flex-container-column items-center justify-center hide-under-l">
             @if(user()->hasAppAccess())
                 @include('layouts.parts.header-search')
             @endif
         </div>
        
-        
+       
     </div>
-    
-    @include('books.parts.list', ['books' => $books, 'view' => $view])
-
 
 @stop
