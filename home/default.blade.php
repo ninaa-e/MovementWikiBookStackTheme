@@ -17,8 +17,6 @@
             @endif
         </div>
 
-        @include('books.parts.list', ['books' => $books])
-
         
 
     </div>
