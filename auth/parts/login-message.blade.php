@@ -1,3 +1,3 @@
 <p class="callout info">
-  If you want editing rights, please reach out to bookstack@iu.uber.space. Thank you!
+  If you want editing rights, please reach out to movementwiki@systemly.org. Thank you!
 </p>
