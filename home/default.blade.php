@@ -11,15 +11,14 @@
     </div>
 
     <div class="container" id="home-default">
-        <div class="flex-container-column items-center justify-center hide-over-l">
-            @if(user()->hasAppAccess())
+        <div class=" hide-over-lcard flex-container-column items-center card">
+           
+                @if(setting('app-logo', '') !== 'none')
+                    <img style="margin: 10px" class="logo-image" src="{{ setting('app-logo', '') === '' ? url('/logo.png') : url(setting('app-logo', '')) }}" alt="Logo">
+                @endif
                 @include('layouts.parts.header-search')
-            @endif
+    
         </div>
-
-
-        
-
     </div>
 
     
